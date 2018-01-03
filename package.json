@@ -1,0 +1,21 @@
+{
+  "name": "virgil",
+  "version": "1.0.0",
+  "description": "A simple web app for examining your likelihood of death were you traveling aboard the Titanic... but it is only a first step.",
+  "main": "app.js",
+  "scripts": {
+    "test": "run-tests"
+  },
+  "author": "Ezra Bertuccelli, Blake Bertuccelli",
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^17.2.0",
+    "inert": "^5.0.1",
+    "js-regression": "^1.0.10",
+    "papaparse": "^4.3.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lowling/virgil.ai.git"
+  }
+}

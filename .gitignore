@@ -1,0 +1,8 @@
+#Dependency directories
+node_modules/
+
+#VS Code files
+.vscode/
+
+#eslint config
+.eslintrc.json

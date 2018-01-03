@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+  <title>Virgil Test</title>
+</head>
+<body>
+
+  <button onclick="initVirgil('virgil-div')">Initialize Virgil</button>
+  <div id="virgil-div">
+  </div>
+  <div>
+    <p>
+      Your current hypothetical chance of surviving is: <span id="virgil-survival-percentage"></span>
+    </p>
+  </div>
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/jsregression.js"></script>
+  <script src="./js/virgil.js"></script>
+  
+  <script type="text/javascript">
+    $('#submit-passenger-data').click(function(event) {
+      let formBody = sessionData;
+        $.ajax({
+          type: "POST",
+          url: 'titanic-model',
+          data: JSON.stringify(formBody),
+          success: (res) => {
+            $('#model-results').text = 'TEST TEST TEST';
+            $().appe
+          },
+          error: (res) => {
+            console.error(res)
+          },
+          contentType: 'application/json'
+        });
+      }
+    );
+  </script>
+
+</body>
+</html>
